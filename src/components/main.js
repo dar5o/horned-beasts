@@ -1,14 +1,23 @@
-import React from 'react';
-import HornedBeast from './hornedbeasts'
+import React from "react";
+import HornedBeast from "./hornedbeasts";
+import "./Main.css";
+let dataForMap = require ("./data.json");
 class Main extends React.Component {
   render() {
     return (
       <>
-        <HornedBeast title='Horned 1' imageUrl='https://images.unsplash.com/photo-1512636618879-bbe79107e9e3?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bd9460ee6d1ddbb6b1ca7be86dfc4590&auto=format&fit=crop&w=1825&q=80' description='horned Beast #1' />
-        <HornedBeast title='Horned 2' imageUrl='http://3.bp.blogspot.com/_DBYF1AdFaHw/TE-f0cDQ24I/AAAAAAAACZg/l-FdTZ6M7z8/s1600/Unicorn_and_Narwhal_by_dinglehopper.jpg' description='horned Beast  #2' />
-        <HornedBeast title='Horned 3' imageUrl='http://cdn.shopify.com/s/files/1/0053/8968/0709/products/Goat_Half_Natural_Top_1200x1200.jpg?v=1572580154' description='horned Beast #3' />
+        {dataForMap.map( (item, i) => {
+          return (
 
-    </>
+            <HornedBeast
+             key = {i}
+              title={item.title}
+              imageUrl={item.image_url}
+              description={item.description}
+            />
+          );
+        })}
+      </>
     );
   }
 }
