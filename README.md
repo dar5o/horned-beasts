@@ -1,7 +1,15 @@
 ## Horned Beasts (Lab 01) - *seattle-code-301d78*
 ### This is our first lab utilizing react
 
+Number and name of feature: display image as modal
 
+Estimate of time needed to complete: approx 1-3 hours
+
+Start time: 12:00pm
+
+Finish time: 2:00
+
+Actual time needed to complete: 2 hours
 
 # Getting Started with Create React App
 
