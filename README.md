@@ -1,3 +1,8 @@
+## Horned Beasts (Lab 01) - *seattle-code-301d78*
+### This is our first lab utilizing react
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
