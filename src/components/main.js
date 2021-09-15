@@ -1,12 +1,17 @@
 import React from "react";
 import HornedBeast from "./hornedbeasts";
 import "./Main.css";
-let dataForMap = require ("./data.json");
+import data from "./data.json";
 class Main extends React.Component {
+  //showModal = () => {
+   // this.setState({
+   //   show: true
+ //   });
+//  };
   render() {
     return (
       <>
-        {dataForMap.map( (item, i) => {
+        {data.map( (item, i) => {
           return (
 
             <HornedBeast
@@ -14,6 +19,7 @@ class Main extends React.Component {
               title={item.title}
               imageUrl={item.image_url}
               description={item.description}
+              showModal={this.props.showModal}
             />
           );
         })}
