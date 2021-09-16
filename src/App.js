@@ -38,6 +38,7 @@ class App extends React.Component {
     return (
     <>
         <Header />
+        
         <Main showModal={this.showModal} />
         <SelectedBeast show={this.state.show} handleClose={this.handleClose} beastList={this.state.beastList} />
         <Footer/>
