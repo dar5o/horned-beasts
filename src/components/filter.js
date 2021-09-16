@@ -16,8 +16,7 @@ class Filter extends React.Component {
       </Form.Control>
       <br />
       <hr />
-
-    </>
+      </>
     );
   }
 }

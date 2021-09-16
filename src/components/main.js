@@ -4,10 +4,8 @@ import "./Main.css";
 import data from "./data.json";
 import Filter from "./filter.js";
 
-
 class Main extends React.Component {
-  
-  
+
   constructor(props) {
     super(props);
     this.state = {
@@ -38,28 +36,24 @@ class Main extends React.Component {
     });
   };
 
-
-
   render() {
     return (
       <>
-          <Filter filterBeasts={this.filterBeasts}/>
-          <hr></hr>
-          <div id="con">
-        {this.state.dataForMap2.map((item, i) => {
-          return (
-            <HornedBeast
-              key={i}
-              title={item.title}
-              imageUrl={item.image_url}
-              description={item.description}
-              showModal={this.props.showModal}
-              // horns={this.props.horns}
-            />
-          );
-        })}
-        </div>
-
+      <Filter filterBeasts={this.filterBeasts}/>
+      <hr></hr>
+      <div id="con">
+      {this.state.dataForMap2.map((item, i) => {
+        return (
+          <HornedBeast
+            key={i}
+            title={item.title}
+            imageUrl={item.image_url}
+            description={item.description}
+            showModal={this.props.showModal}
+          />
+        );
+      })}
+      </div>
       </>
     );
   }
